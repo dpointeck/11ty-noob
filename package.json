@@ -1,0 +1,21 @@
+{
+  "name": "11ty-noob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --input=./src --serve",
+    "css:watch": "tailwindcss -i src/css/tw.css -o _site/css/tw.css --watch",
+    "dev": "concurrently \"npm run css:watch\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "install": "^0.13.0"
+  }
+}
